@@ -1084,6 +1084,12 @@ input, select, textarea { font: inherit; }
   color: var(--muted);
   margin-top: 3px;
 }
+.timeline-thesis {
+  margin-top: 8px;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+}
 .bullets { margin-top: 12px; }
 .bullets li {
   position: relative;
