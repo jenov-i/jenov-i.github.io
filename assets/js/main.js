@@ -67,22 +67,26 @@
 
     $$("[data-i18n]").forEach((el) => {
       const key = el.getAttribute("data-i18n");
-      const value = t(key);
+      const value = (I18N[state.lang] && I18N[state.lang][key]) ?? (I18N.fr && I18N.fr[key]);
       if (typeof value === "string") el.textContent = value;
     });
 
     $$("[data-i18n-html]").forEach((el) => {
       const key = el.getAttribute("data-i18n-html");
-      const value = t(key);
+      const value = (I18N[state.lang] && I18N[state.lang][key]) ?? (I18N.fr && I18N.fr[key]);
       if (typeof value === "string") el.innerHTML = value;
     });
 
     $$("[data-i18n-placeholder]").forEach((el) => {
-      el.setAttribute("placeholder", t(el.getAttribute("data-i18n-placeholder")));
+      const key = el.getAttribute("data-i18n-placeholder");
+      const value = (I18N[state.lang] && I18N[state.lang][key]) ?? (I18N.fr && I18N.fr[key]);
+      if (typeof value === "string") el.setAttribute("placeholder", value);
     });
 
     $$("[data-i18n-aria]").forEach((el) => {
-      el.setAttribute("aria-label", t(el.getAttribute("data-i18n-aria")));
+      const key = el.getAttribute("data-i18n-aria");
+      const value = (I18N[state.lang] && I18N[state.lang][key]) ?? (I18N.fr && I18N.fr[key]);
+      if (typeof value === "string") el.setAttribute("aria-label", value);
     });
 
     const langBtn = $("#lang-toggle");

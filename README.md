@@ -125,6 +125,9 @@ Le fichier `.nojekyll` évite le traitement Jekyll et permet de servir tous les 
 ## Notes techniques
 
 - Aucune dépendance npm, aucun build : modifier un fichier puis pousser suffit.
+- **Après une modification**, incrémenter le numéro de version dans `index.html`
+  (`?v=…` sur `styles.css`, `i18n.js`, `projects.js`, `main.js`) pour forcer le
+  rechargement des assets chez les visiteurs.
 - Polices : Space Grotesk et JetBrains Mono (Google Fonts), avec repli système.
 - `main.js` gère aussi le compteur animé, le scrollspy, la barre de progression et le menu mobile.
 - Le canvas est mis en pause quand il sort de l'écran ou quand l'onglet est masqué.
