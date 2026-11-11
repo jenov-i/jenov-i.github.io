@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DANDOU Jenovi — Technicien Systèmes &amp; Réseaux | Portfolio</title>
+  <meta name="description" content="Portfolio de DANDOU Jenovi, technicien systèmes &amp; réseaux à Brazzaville : administration systèmes, réseaux, cybersécurité, supervision et support IT.">
+  <meta name="author" content="DANDOU Jenovi">
+  <meta name="theme-color" content="#05070b">
+  <meta name="color-scheme" content="dark">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <!-- Open Graph / social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DANDOU Jenovi">
+  <meta property="og:title" content="DANDOU Jenovi — Systèmes, Réseaux &amp; Cybersécurité">
+  <meta property="og:description" content="Technicien Systèmes &amp; Réseaux à Brazzaville. Infrastructures, supervision, sécurité et support IT.">
+  <meta property="og:url" content="https://jenov-i.github.io/">
+  <meta property="og:image" content="https://jenov-i.github.io/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Portrait de DANDOU Jenovi, technicien systèmes et réseaux à Brazzaville">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DANDOU Jenovi — Systèmes, Réseaux &amp; Cybersécurité">
+  <meta name="twitter:description" content="Technicien Systèmes &amp; Réseaux à Brazzaville. Infrastructures, supervision, sécurité et support IT.">
+  <meta name="twitter:image" content="https://jenov-i.github.io/assets/img/og-image.jpg">
+  <link rel="canonical" href="https://jenov-i.github.io/">
+
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/img/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "DANDOU Jenovi",
+    "jobTitle": "Technicien Systèmes & Réseaux",
+    "email": "mailto:dandoujenovi@gmail.com",
+    "telephone": "+242 06 505 46 24",
+    "address": { "@type": "PostalAddress", "addressLocality": "Brazzaville", "addressCountry": "CG" },
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "CFI-CIRAS" },
+      { "@type": "CollegeOrUniversity", "name": "ESGAE Brazzaville" }
+    ],
+    "sameAs": [
+      "https://github.com/jenov-i",
+      "https://www.linkedin.com/in/jenovi-dandou"
+    ],
+    "knowsAbout": ["Administration systèmes", "Réseaux", "Cybersécurité", "Supervision", "Support IT"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="a11y.skip">Aller au contenu</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scroll-bar"></span></div>
+
+  <header class="site-header" id="site-header">
+    <div class="wrap header-inner">
+      <a href="#top" class="brand" aria-label="DANDOU Jenovi — accueil">
+        <span class="brand-mark">JD</span>
+        <span class="brand-text mono">dandou@brazzaville<span class="brand-colon">:</span>~<span class="brand-cursor">$</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale" data-i18n-aria="a11y.nav">
+        <a href="#about" class="nav-link" data-i18n="nav.about">À propos</a>
+        <a href="#skills" class="nav-link" data-i18n="nav.skills">Compétences</a>
+        <a href="#projects" class="nav-link" data-i18n="nav.projects">Projets</a>
+        <a href="#journey" class="nav-link" data-i18n="nav.journey">Parcours</a>
+        <a href="#contact" class="nav-link" data-i18n="nav.contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle mono" id="lang-toggle" type="button" aria-label="Switch to English" title="Switch to English">
+          <span class="lang-fr is-active">FR</span><span class="lang-sep">/</span><span class="lang-en">EN</span>
+        </button>
+        <a class="btn btn-primary btn-sm header-cv" href="assets/cv/CV_Jenovi_Dandou.pdf" download>
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span data-i18n="nav.cv">CV</span>
+        </a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="top">
+      <canvas id="net-canvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="hero-status">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="hero.status">Disponible pour un poste · Brazzaville, Congo</span>
+          </p>
+
+          <p class="hero-kicker mono">// portfolio<span class="dim">_</span>2026 <span class="dim">·</span> systèmes <span class="dim">·</span> réseaux <span class="dim">·</span> sécurité</p>
+
+          <h1 class="hero-title">
+            DANDOU <span class="grad">Jenovi</span>
+          </h1>
+
+          <p class="hero-role mono" aria-live="polite">
+            <span class="prompt" aria-hidden="true">&gt;</span>
+            <span id="typed"></span><span class="caret" aria-hidden="true"></span>
+          </p>
+
+          <p class="hero-lead" data-i18n="hero.lead">
+            Je conçois, sécurise et supervise des infrastructures : réseaux, serveurs, annuaires,
+            sauvegardes et détection d’intrusion. Licence pro ASR, en Master 1 Cybersécurité.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span data-i18n="hero.cta.projects">Explorer mes projets</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M5 12h13m0 0-5-5m5 5-5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="assets/cv/CV_Jenovi_Dandou.pdf" download class="btn btn-ghost">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span data-i18n="hero.cta.cv">Télécharger le CV</span>
+            </a>
+            <a href="#contact" class="btn btn-text">
+              <span data-i18n="hero.cta.contact">Me contacter</span>
+            </a>
+          </div>
+
+          <ul class="hero-badges">
+            <li class="mono"><span class="tick">✓</span> <span data-i18n="hero.badge1">FR natif · EN technique</span></li>
+            <li class="mono"><span class="tick">✓</span> <span data-i18n="hero.badge2">Google IT Support</span></li>
+            <li class="mono"><span class="tick">✓</span> <span data-i18n="hero.badge3">CCNA 200-301</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-portrait" aria-hidden="false">
+          <div class="portrait-orbit orbit-1" aria-hidden="true"></div>
+          <div class="portrait-orbit orbit-2" aria-hidden="true"></div>
+          <div class="portrait-frame">
+            <img src="assets/img/photo.jpg" alt="Portrait de DANDOU Jenovi" width="960" height="1280" fetchpriority="high">
+            <div class="portrait-scan" aria-hidden="true"></div>
+          </div>
+          <div class="portrait-tag mono">
+            <span class="status-dot small" aria-hidden="true"></span> BRAZZAVILLE <span class="dim">·</span> CG
+          </div>
+          <div class="portrait-chip mono chip-1" aria-hidden="true">pfSense</div>
+          <div class="portrait-chip mono chip-2" aria-hidden="true">Zabbix</div>
+          <div class="portrait-chip mono chip-3" aria-hidden="true">Suricata</div>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <div class="stats-bar" id="stats">
+          <div class="stat">
+            <span class="stat-num"><span data-count="20">0</span><span class="stat-suffix">+</span></span>
+            <span class="stat-label" data-i18n="stats.users">utilisateurs supportés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="13">0</span><span class="stat-suffix">+</span></span>
+            <span class="stat-label" data-i18n="stats.projects">projets &amp; labs documentés</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="3">0</span></span>
+            <span class="stat-label" data-i18n="stats.certs">certifications &amp; formations</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num"><span data-count="2">0</span></span>
+            <span class="stat-label" data-i18n="stats.sites">sites AD interconnectés</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- ===================== ABOUT ===================== -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <p class="section-label"><span class="label-idx">01</span><span class="slash">//</span><span data-i18n="about.label">À propos</span></p>
+
+        <div class="about-grid">
+          <div class="about-main reveal">
+            <h2 class="section-title" data-i18n="about.title">Derrière le terminal</h2>
+            <p data-i18n="about.p1">
+              Informaticien basé à Brazzaville, titulaire d’une Licence Professionnelle en Administration
+              Systèmes &amp; Réseaux (ESGAE, 2025) et actuellement en Master 1 Sciences &amp; Technologies du
+              Numérique, option Cybersécurité (CFI-CIRAS). J’ai découvert le métier à la DSI d’un ministère,
+              où j’ai supporté plus de 20 utilisateurs et participé au déploiement d’une nouvelle architecture
+              réseau avec pare-feu FortiGate.
+            </p>
+            <p data-i18n="about.p2">
+              En parallèle, je construis et documente un laboratoire personnel sous VMware : pfSense, Active
+              Directory multi-sites, Zabbix, Graylog, Suricata, Bacula, LDAP/RADIUS… J’aime comprendre ce qui
+              se passe sous le capot, automatiser ce qui peut l’être et laisser derrière moi une documentation
+              claire et réutilisable.
+            </p>
+
+            <div class="about-actions">
+              <a class="btn btn-ghost btn-sm" href="assets/cv/CV_Jenovi_Dandou.pdf" download>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M12 3v12m0 0 4.5-4.5M12 15l-4.5-4.5M4 19.5h16" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                <span data-i18n="about.cv">CV complet (PDF)</span>
+              </a>
+              <a class="btn btn-text btn-sm" href="https://github.com/jenov-i" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="about.github">Voir mon GitHub</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M7 17 17 7m0 0H9m8 0v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+              <a class="btn btn-text btn-sm" href="https://github.com/jenov-i/sysadmin-lab" target="_blank" rel="noopener noreferrer">
+                <span data-i18n="about.lab">Dépôt sysadmin-lab</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="M7 17 17 7m0 0H9m8 0v8" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <aside class="terminal-card reveal" aria-label="Informations rapides">
+            <div class="terminal-bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="terminal-title mono">whoami.txt</span>
+            </div>
+            <dl class="fact-list mono">
+              <div><dt data-i18n="facts.name">nom</dt><dd>DANDOU Jenovi</dd></div>
+              <div><dt data-i18n="facts.roleLabel">rôle</dt><dd data-i18n="facts.role">Technicien Systèmes &amp; Réseaux</dd></div>
+              <div><dt data-i18n="facts.cityLabel">ville</dt><dd>Brazzaville, Congo</dd></div>
+              <div><dt data-i18n="facts.degreeLabel">formation</dt><dd data-i18n="facts.degree">M1 Cybersécurité (en cours)</dd></div>
+              <div><dt data-i18n="facts.langsLabel">langues</dt><dd data-i18n="facts.langs">Français · Anglais technique</dd></div>
+              <div><dt data-i18n="facts.statusLabel">statut</dt><dd class="accent" data-i18n="facts.status">Ouvert aux opportunités</dd></div>
+            </dl>
+            <p class="terminal-foot mono"><span class="prompt">$</span> <span data-i18n="facts.foot">echo "prêt à déployer"</span><span class="caret small" aria-hidden="true"></span></p>
+          </aside>
+        </div>
+
+        <div class="pillars">
+          <article class="pillar reveal">
+            <span class="pillar-idx mono">01</span>
+            <h3 data-i18n="pillars.1.title">Infrastructures &amp; systèmes</h3>
+            <p data-i18n="pillars.1.text">Linux, Windows Server, Active Directory, VMware et Docker : des socles stables, documentés et reproductibles.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-idx mono">02</span>
+            <h3 data-i18n="pillars.2.title">Réseaux &amp; sécurité</h3>
+            <p data-i18n="pillars.2.text">VLAN, routage, VPN IPSec, pfSense/FortiGate, 802.1X : sécuriser les accès et surveiller ce qui circule.</p>
+          </article>
+          <article class="pillar reveal">
+            <span class="pillar-idx mono">03</span>
+            <h3 data-i18n="pillars.3.title">Supervision &amp; support</h3>
+            <p data-i18n="pillars.3.text">Zabbix, Nagios, Graylog, Suricata : détecter avant l’incident, et accompagner les utilisateurs quand il arrive.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== SKILLS ===================== -->
+    <section class="section section-alt" id="skills">
+      <div class="wrap">
+        <p class="section-label"><span class="label-idx">02</span><span class="slash">//</span><span data-i18n="skills.label">Compétences</span></p>
+        <div class="section-head reveal">
+          <h2 class="section-title" data-i18n="skills.title">La stack, concrètement</h2>
+          <p class="section-intro" data-i18n="skills.intro">
+            Des technologies apprises en cours, mais surtout éprouvées en lab, en documentation et en conditions réelles.
+          </p>
+        </div>
+
+        <div class="skill-groups">
+          <article class="skill-group reveal">
+            <header>
+              <span class="skill-idx mono">01</span>
+              <h3 data-i18n="skills.g1.title">Systèmes &amp; virtualisation</h3>
+              <p data-i18n="skills.g1.text">Socles Linux et Windows, annuaire, hyperviseurs.</p>
+            </header>
+            <ul class="chips">
+              <li>Linux Debian / Ubuntu</li><li>Windows Server 2022</li><li>Active Directory</li>
+              <li>DFS &amp; FSMO</li><li>PowerShell</li><li>VMware ESXi</li><li>Docker</li><li>PNetLab</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <header>
+              <span class="skill-idx mono">02</span>
+              <h3 data-i18n="skills.g2.title">Réseaux &amp; connectivité</h3>
+              <p data-i18n="skills.g2.text">Concevoir, segmenter, router, interconnecter.</p>
+            </header>
+            <ul class="chips">
+              <li>TCP/IP</li><li>VLAN</li><li>OSPF</li><li>ACL</li><li>VPN IPSec</li>
+              <li>pfSense</li><li>FortiGate</li><li>Cisco</li><li>VoIP / SIP</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <header>
+              <span class="skill-idx mono">03</span>
+              <h3 data-i18n="skills.g3.title">Sécurité &amp; supervision</h3>
+              <p data-i18n="skills.g3.text">Authentifier, filtrer, détecter, alerter.</p>
+            </header>
+            <ul class="chips">
+              <li>Suricata</li><li>Graylog</li><li>Zabbix</li><li>Nagios Core</li>
+              <li>OpenLDAP</li><li>FreeRADIUS</li><li>802.1X</li><li>OWASP ZAP</li><li data-i18n="skills.chip.hardening">Durcissement Linux</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <header>
+              <span class="skill-idx mono">04</span>
+              <h3 data-i18n="skills.g4.title">Services &amp; sauvegarde</h3>
+              <p data-i18n="skills.g4.text">Les briques qui font tourner une infrastructure.</p>
+            </header>
+            <ul class="chips">
+              <li>Bind9 / DNSSEC</li><li>DHCP</li><li>Postfix / Dovecot</li><li>SpamAssassin</li>
+              <li>ClamAV</li><li>Bacula + NAS</li><li>Kamailio</li><li>Asterisk</li>
+            </ul>
+          </article>
+
+          <article class="skill-group reveal">
+            <header>
+              <span class="skill-idx mono">05</span>
+              <h3 data-i18n="skills.g5.title">Développement &amp; données</h3>
+              <p data-i18n="skills.g5.text">Automatiser, outiller, exposer des API.</p>
+            </header>
+            <ul class="chips">
+              <li>Node.js</li><li>Express</li><li>MongoDB</li><li>PostgreSQL</li>
+              <li>MySQL</li><li>API REST</li><li>Swagger</li><li>HTML / CSS / JS</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ticker-wrap" aria-hidden="true">
+          <div class="ticker mono">
+            <span>pfSense</span><i>◆</i><span>Zabbix</span><i>◆</i><span>Windows Server 2022</span><i>◆</i>
+            <span>Suricata</span><i>◆</i><span>Graylog</span><i>◆</i><span>Bacula</span><i>◆</i>
+            <span>OpenLDAP</span><i>◆</i><span>FreeRADIUS</span><i>◆</i><span>Docker</span><i>◆</i>
+            <span>FortiGate</span><i>◆</i><span>Nagios</span><i>◆</i><span>Debian</span><i>◆</i>
+            <span>pfSense</span><i>◆</i><span>Zabbix</span><i>◆</i><span>Windows Server 2022</span><i>◆</i>
+            <span>Suricata</span><i>◆</i><span>Graylog</span><i>◆</i><span>Bacula</span><i>◆</i>
+            <span>OpenLDAP</span><i>◆</i><span>FreeRADIUS</span><i>◆</i><span>Docker</span><i>◆</i>
+            <span>FortiGate</span><i>◆</i><span>Nagios</span><i>◆</i><span>Debian</span><i>◆</i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <p class="section-label"><span class="label-idx">03</span><span class="slash">//</span><span data-i18n="projects.label">Projets</span></p>
+        <div class="section-head reveal">
+          <h2 class="section-title" data-i18n="projects.title">Ce que j’ai construit</h2>
+          <p class="section-intro" data-i18n="projects.intro">
+            Des labs complets, de la conception à la documentation. Filtrez par domaine, cliquez pour ouvrir le détail.
+          </p>
+        </div>
+
+        <div class="filters" id="filters" role="group" aria-label="Filtrer les projets" data-i18n-aria="projects.filter.aria">
+          <button class="filter is-active mono" data-filter="all" type="button" data-i18n="projects.filter.all">tous</button>
+          <button class="filter mono" data-filter="sec" type="button" data-i18n="projects.filter.sec">sécurité</button>
+          <button class="filter mono" data-filter="net" type="button" data-i18n="projects.filter.net">réseaux</button>
+          <button class="filter mono" data-filter="sys" type="button" data-i18n="projects.filter.sys">systèmes</button>
+          <button class="filter mono" data-filter="dev" type="button" data-i18n="projects.filter.dev">dev &amp; services</button>
+        </div>
+
+        <div class="projects-grid" id="projects-grid"></div>
+        <noscript><p class="noscript">Activez JavaScript pour afficher la galerie de projets détaillée.</p></noscript>
+      </div>
+    </section>
+
+    <!-- ===================== JOURNEY ===================== -->
+    <section class="section section-alt" id="journey">
+      <div class="wrap">
+        <p class="section-label"><span class="label-idx">04</span><span class="slash">//</span><span data-i18n="journey.label">Parcours</span></p>
+        <div class="section-head reveal">
+          <h2 class="section-title" data-i18n="journey.title">Expérience &amp; formation</h2>
+          <p class="section-intro" data-i18n="journey.intro">Le terrain, les diplômes, et ce que j’ai appris entre les deux.</p>
+        </div>
+
+        <div class="journey-grid">
+          <div class="journey-col reveal">
+            <h3 class="journey-heading mono"><span class="tick-box" aria-hidden="true">▸</span> <span data-i18n="journey.exp">Expérience</span></h3>
+            <div class="timeline">
+              <article class="timeline-item">
+                <p class="timeline-date mono" data-i18n="exp.1.date">Fév. – Mai 2025</p>
+                <h4 data-i18n="exp.1.role">Stagiaire — Support technique &amp; réseaux</h4>
+                <p class="timeline-org" data-i18n="exp.1.org">DSI · Ministère de la Fonction Publique, du Travail et de la Sécurité Sociale</p>
+                <p class="timeline-loc mono">Brazzaville, Congo</p>
+                <ul class="bullets">
+                  <li data-i18n="exp.1.b1">Support de proximité auprès de 20+ utilisateurs : diagnostic et résolution d’incidents matériels et logiciels.</li>
+                  <li data-i18n="exp.1.b2">Installation, configuration et mise en service de postes de travail et de périphériques réseau.</li>
+                  <li data-i18n="exp.1.b3">Maintenance préventive et corrective du parc informatique.</li>
+                  <li data-i18n="exp.1.b4">Participation au déploiement d’une nouvelle architecture réseau (pare-feu FortiGate, équipements Huawei).</li>
+                </ul>
+              </article>
+
+              <article class="timeline-item">
+                <p class="timeline-date mono" data-i18n="exp.2.date">2024 – aujourd’hui</p>
+                <h4 data-i18n="exp.2.role">Administrateur de mon laboratoire personnel</h4>
+                <p class="timeline-org" data-i18n="exp.2.org">Infrastructure, sécurité &amp; supervision — projets autoportés</p>
+                <p class="timeline-loc mono">Lab VMware · Brazzaville</p>
+                <ul class="bullets">
+                  <li data-i18n="exp.2.b1">Conception de labs complets : pfSense, Active Directory multi-sites, LDAP/RADIUS, Zabbix, Graylog, Suricata, Bacula.</li>
+                  <li data-i18n="exp.2.b2">Documentation systématique de chaque déploiement : schémas, procédures, rapports techniques.</li>
+                  <li data-i18n="exp.2.b3">Veille et expérimentation : Docker, VoIP, WebRTC, LLM local avec Ollama, sécurité web.</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <div class="journey-col reveal">
+            <h3 class="journey-heading mono"><span class="tick-box" aria-hidden="true">▸</span> <span data-i18n="journey.edu">Formation</span></h3>
+            <div class="timeline">
+              <article class="timeline-item">
+                <p class="timeline-date mono">2026 – en cours</p>
+                <h4 data-i18n="edu.1.title">Master 1 — Sciences &amp; Technologies du Numérique</h4>
+                <p class="timeline-org" data-i18n="edu.1.org">CFI-CIRAS — option Cybersécurité</p>
+                <p class="timeline-loc mono">Brazzaville</p>
+              </article>
+
+              <article class="timeline-item">
+                <p class="timeline-date mono">2025</p>
+                <h4 data-i18n="edu.2.title">Licence Professionnelle — Administration Systèmes &amp; Réseaux</h4>
+                <p class="timeline-org" data-i18n="edu.2.org">ESGAE — mention Assez Bien</p>
+                <p class="timeline-loc mono" data-i18n="edu.2.extra">Soutenance : solution de sauvegarde / restauration Bacula + NAS</p>
+              </article>
+
+              <article class="timeline-item">
+                <p class="timeline-date mono">2022 – 2024</p>
+                <h4 data-i18n="edu.3.title">BAC+2 — Réseaux et Télécommunications</h4>
+                <p class="timeline-org">EAD Brazzaville</p>
+                <p class="timeline-loc mono">Brazzaville</p>
+              </article>
+
+              <article class="timeline-item">
+                <p class="timeline-date mono">2022</p>
+                <h4 data-i18n="edu.4.title">Baccalauréat scientifique — série D</h4>
+                <p class="timeline-org">Lycée Nganga Edouard (LNE)</p>
+                <p class="timeline-loc mono">Brazzaville</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
+        <h3 class="certs-heading mono reveal"><span class="tick-box" aria-hidden="true">▸</span> <span data-i18n="certs.title">Certifications &amp; formations</span></h3>
+        <div class="certs-grid">
+          <article class="cert reveal">
+            <div class="cert-top">
+              <span class="cert-badge mono">Google</span>
+              <span class="cert-state is-done mono" data-i18n="certs.done">obtenue</span>
+            </div>
+            <h4>Google IT Support Professional Certificate</h4>
+            <p class="mono">Google · Coursera</p>
+          </article>
+          <article class="cert reveal">
+            <div class="cert-top">
+              <span class="cert-badge mono">Cisco</span>
+              <span class="cert-state is-done mono" data-i18n="certs.trained">formation</span>
+            </div>
+            <h4>CCNA 200-301</h4>
+            <p class="mono">iCONNECT</p>
+          </article>
+          <article class="cert reveal">
+            <div class="cert-top">
+              <span class="cert-badge mono">Akamai</span>
+              <span class="cert-state is-progress mono" data-i18n="certs.progress">en cours</span>
+            </div>
+            <h4>Network Engineer Professional Certificate</h4>
+            <p class="mono">Akamai · Coursera — <span data-i18n="certs.since">depuis août 2026</span></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== CONTACT ===================== -->
+    <section class="section" id="contact">
+      <div class="wrap">
+        <p class="section-label"><span class="label-idx">05</span><span class="slash">//</span><span data-i18n="contact.label">Contact</span></p>
+
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <h2 class="section-title" data-i18n="contact.title">Parlons infrastructure.</h2>
+            <p class="section-intro" data-i18n="contact.intro">
+              Une opportunité, un stage, un projet réseau ou un besoin de support ? Mon inbox est ouvert.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M3 6h18v12H3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="m3 7 9 6 9-6" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label mono">e-mail</span>
+                  <a href="mailto:dandoujenovi@gmail.com">dandoujenovi@gmail.com</a>
+                </div>
+                <button class="copy-btn mono" type="button" data-copy="dandoujenovi@gmail.com" data-i18n="contact.copy" data-i18n-aria="contact.copy.aria" aria-label="Copier l’adresse e-mail">copier</button>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.5a12 12 0 0 0 6 6l1.5-2 4 1.5v3a2 2 0 0 1-2.2 2A17 17 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2Z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label mono" data-i18n="contact.phone">téléphone / whatsapp</span>
+                  <a href="tel:+242065054624">+242 06 505 46 24</a>
+                  <a href="tel:+242068183372">+242 06 818 33 72</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M4 5h16v14H4z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8 9h8M8 13h5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label mono">linkedin</span>
+                  <a href="https://www.linkedin.com/in/jenovi-dandou" target="_blank" rel="noopener noreferrer">in/jenovi-dandou</a>
+                </div>
+              </li>
+              <li>
+                <span class="contact-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24"><path d="M9 19c-4 1.2-4-2.2-6-2.5m12 5v-3.6a3.1 3.1 0 0 0-.9-2.4c3-.3 6.1-1.5 6.1-6.6a5.2 5.2 0 0 0-1.4-3.6 4.8 4.8 0 0 0-.1-3.6s-1.1-.3-3.7 1.4a12.6 12.6 0 0 0-6.6 0C5.8 1.5 4.7 1.8 4.7 1.8a4.8 4.8 0 0 0-.1 3.6A5.2 5.2 0 0 0 3.2 9c0 5 3.1 6.3 6.1 6.6a3.1 3.1 0 0 0-.9 2.4V21" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <div>
+                  <span class="contact-label mono">github</span>
+                  <a href="https://github.com/jenov-i" target="_blank" rel="noopener noreferrer">github.com/jenov-i</a>
+                </div>
+              </li>
+            </ul>
+
+            <p class="contact-loc mono"><span class="status-dot small" aria-hidden="true"></span> Brazzaville, Congo <span class="dim">·</span> UTC+1 <span class="dim">·</span> <span data-i18n="contact.remote">remote-friendly</span></p>
+          </div>
+
+          <div class="terminal-card contact-form-card reveal">
+            <div class="terminal-bar">
+              <span class="dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span class="terminal-title mono">contact --new</span>
+            </div>
+            <form id="contact-form" novalidate>
+              <div class="field-row">
+                <label class="field">
+                  <span class="field-label mono" data-i18n="form.name">nom</span>
+                  <input type="text" name="name" id="f-name" autocomplete="name" required data-i18n-placeholder="form.name.ph" placeholder="Votre nom">
+                </label>
+                <label class="field">
+                  <span class="field-label mono" data-i18n="form.email">e-mail</span>
+                  <input type="email" name="email" id="f-email" autocomplete="email" required data-i18n-placeholder="form.email.ph" placeholder="vous@exemple.com">
+                </label>
+              </div>
+
+              <label class="field">
+                <span class="field-label mono" data-i18n="form.subject">sujet</span>
+                <select name="subject" id="f-subject">
+                  <option value="Opportunité professionnelle" data-i18n="form.subject.1">Opportunité professionnelle</option>
+                  <option value="Stage / alternance" data-i18n="form.subject.2">Stage / alternance</option>
+                  <option value="Collaboration technique" data-i18n="form.subject.3">Collaboration technique</option>
+                  <option value="Autre" data-i18n="form.subject.4">Autre</option>
+                </select>
+              </label>
+
+              <label class="field">
+                <span class="field-label mono" data-i18n="form.message">message</span>
+                <textarea name="message" id="f-message" rows="5" required data-i18n-placeholder="form.message.ph" placeholder="Décrivez votre besoin en quelques lignes…"></textarea>
+              </label>
+
+              <button type="submit" class="btn btn-primary btn-block">
+                <svg viewBox="0 0 24 24" aria-hidden="true" class="icon"><path d="m3 11 18-8-8 18-2.5-7.5L3 11Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                <span data-i18n="form.send">Envoyer le message</span>
+              </button>
+
+              <p class="form-note mono" data-i18n="form.note">
+                Ouvre votre client mail avec le message prérempli. Aucun serveur tiers, aucun tracker.
+              </p>
+              <p class="form-error" id="form-error" role="alert" hidden data-i18n="form.error">Merci de remplir tous les champs avec une adresse e-mail valide.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div class="footer-brand">
+        <span class="brand-mark small">JD</span>
+        <div>
+          <p class="footer-name">DANDOU Jenovi</p>
+          <p class="footer-role mono" data-i18n="footer.role">Technicien Systèmes &amp; Réseaux · Brazzaville, Congo</p>
+        </div>
+      </div>
+      <p class="footer-note mono" data-i18n="footer.note">Conçu et codé à la main. HTML, CSS &amp; JavaScript vanilla — sans build.</p>
+      <div class="footer-links">
+        <a href="https://github.com/jenov-i" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/jenovi-dandou" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:dandoujenovi@gmail.com">E-mail</a>
+        <button class="to-top mono" id="to-top" type="button" aria-label="Revenir en haut">↑ <span data-i18n="footer.top">haut</span></button>
+      </div>
+    </div>
+    <p class="footer-copy mono">© <span id="year">2026</span> DANDOU Jenovi <span class="dim">·</span> <span data-i18n="footer.rights">Tous droits réservés</span></p>
+  </footer>
+
+  <!-- Project modal -->
+  <div class="modal" id="project-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+    <div class="modal-backdrop" data-close></div>
+    <div class="modal-panel" role="document">
+      <button class="modal-close" type="button" aria-label="Fermer" data-close>✕</button>
+      <div class="modal-content" id="modal-content"></div>
+    </div>
+  </div>
+
+  <div class="toast mono" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="assets/js/i18n.js"></script>
+  <script src="assets/js/projects.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
