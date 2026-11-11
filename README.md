@@ -91,7 +91,7 @@ Attributs disponibles : `data-i18n` (texte), `data-i18n-html`, `data-i18n-placeh
 ### CV et photo
 
 - Remplacer `assets/cv/CV_Jenovi_Dandou.pdf` (même nom) pour mettre le CV à jour.
-- Remplacer `assets/img/photo.jpg` par un portrait vertical ; le cadrage circulaire est en CSS.
+- Remplacer `assets/img/photo.jpg` par un portrait carré (idéalement 760×760) ; le cadrage circulaire est en CSS.
 
 ## Formulaire de contact
 
